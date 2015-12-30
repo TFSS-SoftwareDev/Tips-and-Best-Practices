@@ -58,7 +58,7 @@
     // do something
   }
   ```
-  What do 23 and 5.23 mean? Use variable names for numerical constants. For example, a more descriptive name for 23 can be `UPPER_BOUND` and for 5 it can be `THRESHOLD`.
+  What do 23 and 5.23 mean? Use variable names for numerical constants. For example, a more descriptive name for 23 can be `UPPER_BOUND` and for 5.23 it can be `THRESHOLD`.
 
 7. Code grouping is good. Similar or logically separate tasks can be grouped with empty lines between different tasks. For example, different sections in the following are 1) initialize variables 2) Create a BufferedReader 3) Use a for loop to initialize the set of values.
   
