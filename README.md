@@ -80,13 +80,20 @@
 
 10. Debug as you go. Don’t write the full program and then debug. In non-trivial programs, there are too many variables to handle at the end. You should check that your code works after every feature implementation and during feature implementation whenever it makes sense.
 
-11. Comment your code. Especially complicated things. Avoid commenting obvious stuff like
+11. Comment your code. Especially complicated things. Use descriptive comments (not `// Some magic happens here`). Avoid commenting obvious stuff like
   ```
   // adds 5 to x
   x += 5;
   ```
+12. Keep your code simple. [Example](https://www.beyond3d.com/content/articles/8/) of what not to do:
+  ```
+  i = * ( long * ) &y; // evil floating point bit level ninja hacking
+  i = 0x5f3759df - ( i >> 1 ); // what the ....?
+  ```
+  
+13. Don't do stuff like [this](https://www.quora.com/What-is-the-funniest-piece-of-code-youve-ever-come-across).
 
-12. Ready to Program is for learning. You won’t use it outside the classroom. Take a look at [IntelliJ IDEA](https://www.jetbrains.com/idea/) (our favorite), [Eclipse](https://eclipse.org/), or [NetBeans](https://netbeans.org/). Those are Integrated Development Environments (aka IDEs) which provide cool tools to make your life easier.
+14. Ready to Program is for learning. You won’t use it outside the classroom. Take a look at [IntelliJ IDEA](https://www.jetbrains.com/idea/) (our favorite), [Eclipse](https://eclipse.org/), or [NetBeans](https://netbeans.org/). Those are Integrated Development Environments (aka IDEs) which provide cool tools to make your life easier.
   - They provide intelligent code completion: instead of typing everything out, a drop down menu will appear beside the carat with suggestions. You just need to type 2 or 3 letters and then press enter on the suggestion you want. This saves a lot of time.
   - They have lots of shortcuts: In IntelliJ, Instead of creating a for loop manually, type ‘for’ + tab and a for loop template will be generated. Instead of renaming every variable, method, or class manually, click on any name and press shift + F6 and rename all matching names at once. And so on. 
   - They support easy version control: you can connect your project to something like Github from inside the IDE. It’s like an online backup. But you can also share the code with other people like that. It’s great for working on teams and is how open source projects are maintained. 
